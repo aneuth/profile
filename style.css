@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;400;500&family=Space+Mono&display=swap');
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  background-color: #505156;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  /* line-height: 36px; */
+}
+
+h1 {
+  color:#9D9FA7;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+h2 {
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #C2AFF0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-content: space-around;
+  margin: 0 auto;
+}
+
+
+.card {
+  text-align: center;
+  background-color: #DBD0F3;
+  padding: 15px;
+  margin: 16px;
+  box-shadow: 0 6px 15px rgb(0 0 0 /0.2);
+  border-radius: 6px;
+  height: 250px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+ .icon-social:hover {
+  color: white;
+  font-size: 25px;
+ }
+
+
+.icon-social {
+  display: inline-block;
+  align-items: centre;
+  padding: 6px 5px;
+  transition: 0.75s ease-in-out;
+}
+
+.btn-discover {
+  text-decoration: none;
+  border-radius: 5px;
+	padding: 6px 20px;
+	background-color: #7F7FD1;
+	border: 3px solid #7F7FD1;
+	text-align: center;
+  margin-top: 15px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  transition: 1.5s;
+  padding: 8px;
+}
+
+.profile-image {
+  border-radius: 50%;
+	width: 120px;
+  margin-bottom: 10px;
+}
+
+.travel {
+  background: linear-gradient(135deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%),url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4c/29/d0/photo0jpg.jpg?w=1200&h=-1&s=1');
+	background-size: cover;
+  opacity: 0.8;
+}
+
+.travel-header {
+   margin-top: 15px;
+}
+
+.gym {
+  background: linear-gradient(135deg,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%),url('https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Fitness/580x350/Secrets+of+People+Who+Stay+in+Shape/Metabolic+Workouts.jpg');
+	background-size: cover;
+  opacity: 0.8;
+}
+
+.food {
+  background: linear-gradient(135deg,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%),url('https://i.guim.co.uk/img/media/c9bbe942fa705fd695189cb7daf7a9974783126a/0_0_5574_3344/master/5574.jpg?width=700&quality=85&auto=format&fit=max&s=70708f08f00d05eaeaa5d71b3656ce6e');
+	background-size: cover;
+  opacity: 0.8;
+}
+
+.footer {
+  height: 100px;
+  align-items: center;
+}
