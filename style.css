@@ -22,28 +22,46 @@
 }
 
 body {
-  background-color: #505156;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+  background: linear-gradient(to right top, #290025, #654597);
+  font-family: 'Space Mono', monospace;
+  color: rgb(200, 200, 200);
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-  /* line-height: 36px; */
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
 }
 
 h1 {
-  color:#9D9FA7;
+  color: rgb(200, 200, 200);
   font-family: 'Space Mono', monospace;
-  font-size: 24px;
+  line-height: 20px;
+  font-size: 18px;
   font-weight: bolder;
 }
 
 h2 {
-  color: white;
+  color: rgb(250, 250, 250);
   font-family: 'Space Mono', monospace;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bolder;
   margin: 10px;
+}
+
+h3 {
+  color: rgb(250, 250, 250);
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: bolder;
+  margin: 10px;
+  position: absolute;
+  bottom: 60px;
+  left: 42px;
 }
 
 a {
@@ -52,57 +70,65 @@ a {
 }
 
 .container {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-content: space-around;
-  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  width: 70em;
 }
 
 
 .card {
+  flex: 1 1 80px;
   text-align: center;
-  background-color: #DBD0F3;
+  background-color: #1B133A;
   padding: 15px;
-  margin: 16px;
   box-shadow: 0 6px 15px rgb(0 0 0 /0.2);
   border-radius: 6px;
-  height: 250px;
+  margin: 10px;
+  position: relative;
+  transition: transform 0.15s ease-in-out;
 }
 
 .list-inline {
   list-style: none;
   padding-left: 0px;
+  position: absolute;
+  bottom: 10px;
+  left: 42px;
 }
 
  .icon-social:hover {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
  }
 
 
 .icon-social {
   display: inline-block;
-  align-items: centre;
+  align-items: center;
   padding: 6px 5px;
-  transition: 0.75s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 .btn-discover {
   text-decoration: none;
   border-radius: 5px;
 	padding: 6px 20px;
-	background-color: #7F7FD1;
-	border: 3px solid #7F7FD1;
+	background-color: #3A015C;
+	border: 3px solid #3A015C;
 	text-align: center;
   margin-top: 15px;
+  position: absolute;
+  bottom: 24px;
+  right: 40px;
 }
 
 a:hover {
   text-decoration: none;
   color: white;
-  transition: 1.5s;
-  padding: 8px;
 }
 
 .profile-image {
@@ -111,31 +137,53 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.travel {
-  background: linear-gradient(135deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%),url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4c/29/d0/photo0jpg.jpg?w=1200&h=-1&s=1');
+.travel-first-pic {
+  background: linear-gradient(135deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%),url('images/part-one.jpg');
 	background-size: cover;
   opacity: 0.8;
 }
 
-.travel-header {
+.top-header {
    margin-top: 15px;
+   position: absolute;
+   top: -10px;
+   right: 65px;
+   text-align: left;
+   left: 0px;
 }
 
-.gym {
-  background: linear-gradient(135deg,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%),url('https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Fitness/580x350/Secrets+of+People+Who+Stay+in+Shape/Metabolic+Workouts.jpg');
+.bottom-header {
+  margin-bottom: 15px;
+  position: absolute;
+  bottom: 5px;
+  left: 60px;
+  text-align: right;
+}
+
+.travel-second-pic {
+  background: linear-gradient(135deg,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%),url('images/part-two.jpg');
 	background-size: cover;
   opacity: 0.8;
 }
 
-.food {
-  background: linear-gradient(135deg,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%),url('https://i.guim.co.uk/img/media/c9bbe942fa705fd695189cb7daf7a9974783126a/0_0_5574_3344/master/5574.jpg?width=700&quality=85&auto=format&fit=max&s=70708f08f00d05eaeaa5d71b3656ce6e');
+.travel-first-pic:hover {
+  transform: perspective(250px) translateZ(-15px);
+}
+
+.travel-second-pic:hover {
+  transform: perspective(250px) translateZ(-15px);
+}
+
+.travel-third-pic:hover {
+  transform: perspective(250px) translateZ(-15px);
+}
+
+.travel-third-pic {
+  background: linear-gradient(135deg,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%),url('images/part-three.jpg');
 	background-size: cover;
   opacity: 0.8;
 }
 
-
-
-.footer {
-  height: 100px;
-  align-items: center;
-}
+/* .footer:hover {
+  transform: translate(-10px, -10px);
+} */
